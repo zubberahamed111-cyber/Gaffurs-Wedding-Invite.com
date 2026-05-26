@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Wedding Invitation – Liyana & Althaf Hussain</title>
-<meta property="og:title" content="You're Invited 💍 Liyana & Althaf Hussain">
+<title>Wedding Invitation – Abdul gaffur & Aneesa </title>
+<meta property="og:title" content="You're Invited 💍 Abdul gaffur & Aneesa ">
 <meta property="og:description" content="Join us to celebrate our Nikkah – May 9, 2026 · Paradise Convention Centre">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -492,7 +492,83 @@ body {
     <div class="hex-sm"></div>
   </div>
 
-  <!-- SCRATCH CARD -->
+<!-- ══════════════════════════════════
+       DUAL SCRATCH CARDS
+  ══════════════════════════════════ -->
+  <div class="events-section">
+    <span class="events-label">✦ Scratch to reveal the dates ✦</span>
+    <div class="events-grid">
+ 
+      <!-- NIKAH CARD -->
+      <div class="event-card" id="card-nikah">
+        <div class="event-card-band">
+          <div class="event-card-band-title">Nikah</div>
+        </div>
+        <div class="event-card-reveal">
+          <span class="event-month">June</span>
+          <span class="event-day-num">11</span>
+          <span class="event-weekday">Thursday</span>
+          <span class="event-year">2026</span>
+        </div>
+        <div class="event-scratch-overlay" id="overlay-nikah">
+          <canvas class="event-canvas" id="canvas-nikah"></canvas>
+        </div>
+      </div>
+ 
+      <!-- WALIMA CARD -->
+      <div class="event-card" id="card-walima">
+        <div class="event-card-band">
+          <div class="event-card-band-title">Walima</div>
+        </div>
+        <div class="event-card-reveal">
+          <span class="event-month">June</span>
+          <span class="event-day-num">12</span>
+          <span class="event-weekday">Friday</span>
+          <span class="event-year">2026</span>
+        </div>
+        <div class="event-scratch-overlay" id="overlay-walima">
+          <canvas class="event-canvas" id="canvas-walima"></canvas>
+        </div>
+      </div>
+ 
+    </div>
+    <span class="scratch-hint" id="scratchHint">Scratch each card to reveal ✦</span>
+  </div>
+ 
+  
+  <!-- SCRATCH CARD  Nikha -->
+  <div class="scratch-wrap" id="scratchWrap">
+    <div id="scratchCard">
+      <!-- Gold reveal underneath -->
+      <div class="scratch-reveal">
+        <div class="date-reveal-part">
+          <span class="date-sm">june</span>
+        </div>
+        <div class="date-divider"></div>
+        <div class="date-reveal-part">
+          <span class="date-big">11</span>
+        </div>
+        <div class="date-divider"></div>
+        <div class="date-reveal-part">
+          <span class="date-sm">Thursday</span>
+        </div>
+        <div class="date-divider"></div>
+        <div class="date-reveal-part">
+          <span class="date-big" style="font-size:20px">2026</span>
+        </div>
+      </div>
+      <!-- Scratchable gold layer -->
+      <div class="scratch-bg">
+        <div class="scratch-label">Scratch To Reveal</div>
+      </div>
+      <!-- Canvas on top -->
+      <canvas id="scratchCanvas"></canvas>
+    </div>
+    <p id="scratchHint" style="font-size:11px;color:var(--muted);margin-top:8px;font-style:italic;">✦ Scratch to reveal the Nikha date ✦</p>
+  </div>
+
+  
+  <!-- SCRATCH CARD  Valima -->
   <div class="scratch-wrap" id="scratchWrap">
     <div id="scratchCard">
       <!-- Gold reveal underneath -->
@@ -520,12 +596,12 @@ body {
       <!-- Canvas on top -->
       <canvas id="scratchCanvas"></canvas>
     </div>
-    <p id="scratchHint" style="font-size:11px;color:var(--muted);margin-top:8px;font-style:italic;">✦ Scratch to reveal the date ✦</p>
+    <p id="scratchHint" style="font-size:11px;color:var(--muted);margin-top:8px;font-style:italic;">✦ Scratch to reveal the Valima date ✦</p>
   </div>
 
   <!-- VENUE -->
   <div class="venue-section">
-    <div class="venue-name">B Convention Hall</div>
+    <div class="venue-name"> Valima Venue <br> B Convention Hall</div>
     <div class="venue-place">Ponnur Road, Guntur</div>
     <div class="btn-row">
       <a class="btn btn-primary"
@@ -560,7 +636,7 @@ body {
       <div class="t-item">
         <div class="t-dot"></div>
         <div class="t-content">
-          <div class="t-time">07:30 AM</div>
+          <div class="t-time">07:30 PM</div>
           <div class="t-title">Entry</div>
           <div class="t-sub">Dulha Dulhan Entry</div>
         </div>
@@ -587,7 +663,7 @@ body {
         <div class="t-dot"></div>
         <div class="t-content">
           <div class="t-time">8:00 PM</div>
-          <div class="t-title">Walima Reception</div>
+          <div class="t-title">Valima Reception</div>
           <div class="t-sub">Dinner Start</div>
         </div>
       </div>
